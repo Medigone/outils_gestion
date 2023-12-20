@@ -1,0 +1,58 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"ubZCZm492L\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Nouvelles D\u00e9penses\",\"col\":4}},{\"id\":\"rlupcnqKxy\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total D\u00e9penses Mois\",\"col\":4}},{\"id\":\"NFREX-DQHV\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Montant d\u00fb Clients\",\"col\":4}},{\"id\":\"T7eH3Sm7iH\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"j1oi8K_uXB\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Nouvelles demandes d'avances\",\"col\":4}},{\"id\":\"cTv-fgej_L\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Demandes d'avances Approuv\u00e9es\",\"col\":4}},{\"id\":\"dFbwN1VKke\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Demandes d'avances Remises\",\"col\":4}},{\"id\":\"C-8E5ELA64\",\"type\":\"spacer\",\"data\":{\"col\":12}}]",
+ "creation": "2023-12-17 20:55:25.989036",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "permission",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Gestion",
+ "links": [],
+ "modified": "2023-12-20 13:58:33.345928",
+ "modified_by": "Administrator",
+ "module": "Outils Gestion",
+ "name": "Gestion",
+ "number_cards": [
+  {
+   "label": "Total D\u00e9penses Mois",
+   "number_card_name": "Total D\u00e9penses Mois"
+  },
+  {
+   "label": "Montant d\u00fb Clients",
+   "number_card_name": "Montant d\u00fb"
+  },
+  {
+   "label": "Demandes d'avances Remises",
+   "number_card_name": "Demandes d'avances Remises"
+  },
+  {
+   "label": "Nouvelles demandes d'avances",
+   "number_card_name": "Nouvelles demandes d'avances"
+  },
+  {
+   "label": "Total Nouvelles D\u00e9penses",
+   "number_card_name": "Total Nouvelles D\u00e9penses"
+  },
+  {
+   "label": "Demandes d'avances Approuv\u00e9es",
+   "number_card_name": "Demandes d'avances Approuv\u00e9es"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Accounts Manager"
+  }
+ ],
+ "sequence_id": 5.0,
+ "shortcuts": [],
+ "title": "Gestion"
+}

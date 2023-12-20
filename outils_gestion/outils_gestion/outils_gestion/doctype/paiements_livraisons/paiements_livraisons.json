@@ -1,0 +1,192 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-18 11:23:03.581029",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "moyen_paiement",
+  "column_break_tzyd",
+  "client",
+  "bl",
+  "section_break_gdtw",
+  "montant_esp",
+  "recu",
+  "montant_cheque",
+  "photo_cheque",
+  "date_encaissement",
+  "column_break_qbyc",
+  "beneficiaire",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Client",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "default": "User",
+   "fieldname": "beneficiaire",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "B\u00e9n\u00e9ficiaire",
+   "options": "User",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:(doc.moyen_paiement==\"Esp\u00e8ce\")",
+   "fieldname": "recu",
+   "fieldtype": "Attach Image",
+   "label": "Re\u00e7u de paiement",
+   "mandatory_depends_on": "eval:(doc.moyen_paiement==\"Esp\u00e8ce\")"
+  },
+  {
+   "fieldname": "moyen_paiement",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Moyen de paiement",
+   "options": "Esp\u00e8ce\nCh\u00e8que",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:(doc.moyen_paiement==\"Esp\u00e8ce\")",
+   "fieldname": "montant_esp",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Montant Esp\u00e8ce",
+   "mandatory_depends_on": "eval:(doc.moyen_paiement==\"Esp\u00e8ce\")",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_qbyc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:(doc.moyen_paiement==\"Ch\u00e8que\")",
+   "fieldname": "montant_cheque",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Montant Ch\u00e8que",
+   "mandatory_depends_on": "eval:(doc.moyen_paiement==\"Ch\u00e8que\")",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "depends_on": "eval:(doc.moyen_paiement==\"Ch\u00e8que\")",
+   "fieldname": "photo_cheque",
+   "fieldtype": "Attach Image",
+   "label": "Photo Ch\u00e8que",
+   "mandatory_depends_on": "eval:(doc.moyen_paiement==\"Ch\u00e8que\")"
+  },
+  {
+   "default": "Today",
+   "depends_on": "eval:(doc.moyen_paiement==\"Ch\u00e8que\")",
+   "fieldname": "date_encaissement",
+   "fieldtype": "Date",
+   "label": "Date Encaissement",
+   "mandatory_depends_on": "eval:(doc.moyen_paiement==\"Ch\u00e8que\")"
+  },
+  {
+   "fieldname": "bl",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Bon de livraison",
+   "options": "Delivery Note"
+  },
+  {
+   "fieldname": "section_break_gdtw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_tzyd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Paiements Livraisons",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-12-18 15:23:17.845111",
+ "modified_by": "Administrator",
+ "module": "Outils Gestion",
+ "name": "Paiements Livraisons",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "read": 1,
+   "role": "All",
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

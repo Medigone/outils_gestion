@@ -1,0 +1,78 @@
+{
+ "actions": [],
+ "creation": "2023-12-18 10:30:11.340332",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "vehicule",
+  "releve"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "vehicule",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "V\u00e9hicule",
+   "options": "Vehicle",
+   "reqd": 1
+  },
+  {
+   "fieldname": "releve",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Relev\u00e9 kilom\u00e9trique",
+   "non_negative": 1,
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-12-18 15:15:05.574433",
+ "modified_by": "Administrator",
+ "module": "Outils Gestion",
+ "name": "Odometre",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "date",
+ "sort_order": "ASC",
+ "states": [],
+ "title_field": "vehicule",
+ "track_changes": 1
+}

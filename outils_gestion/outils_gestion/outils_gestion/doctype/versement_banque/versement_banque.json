@@ -1,0 +1,117 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:VER-{YY}-{MM}-{###}",
+ "creation": "2023-12-18 10:51:51.076800",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_74lt",
+  "date",
+  "client",
+  "montant",
+  "amended_from",
+  "column_break_zhbk",
+  "bordereau",
+  "photo_bordereau"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_74lt",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Versement Banque",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Client",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "montant",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Montant",
+   "non_negative": 1,
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "bordereau",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "N\u00ba Bordereau Versement",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_zhbk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "photo_bordereau",
+   "fieldtype": "Attach Image",
+   "label": "Photo Bordereau"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-12-18 15:14:07.299392",
+ "modified_by": "Administrator",
+ "module": "Outils Gestion",
+ "name": "Versement Banque",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "date",
+ "sort_order": "ASC",
+ "states": []
+}

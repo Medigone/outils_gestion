@@ -1,0 +1,39 @@
+{
+ "based_on": "creation",
+ "chart_name": "D\u00e9penses par type",
+ "chart_type": "Sum",
+ "creation": "2023-12-17 22:16:05.830625",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "document_type": "Depenses",
+ "dynamic_filters_json": "[]",
+ "filters_json": "[[\"Depenses\",\"workflow_state\",\"=\",\"Approved\",false],[\"Depenses\",\"date\",\"Timespan\",\"this month\",false]]",
+ "group_by_type": "Count",
+ "idx": 0,
+ "is_public": 0,
+ "is_standard": 1,
+ "last_synced_on": "2023-12-17 22:17:04.405388",
+ "modified": "2023-12-17 22:19:47.332010",
+ "modified_by": "Administrator",
+ "module": "Outils Gestion",
+ "name": "D\u00e9penses par type",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "parent_document_type": "",
+ "roles": [
+  {
+   "role": "Administrator"
+  },
+  {
+   "role": "Accounts Manager"
+  }
+ ],
+ "source": "",
+ "time_interval": "Monthly",
+ "timeseries": 1,
+ "timespan": "Last Year",
+ "type": "Pie",
+ "use_report_chart": 0,
+ "value_based_on": "montant_depense",
+ "y_axis": []
+}

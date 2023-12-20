@@ -1,0 +1,38 @@
+{
+ "aggregate_function_based_on": "montant_depense",
+ "based_on": "",
+ "chart_name": "D\u00e9penses par type - Mois",
+ "chart_type": "Group By",
+ "creation": "2023-12-17 22:21:58.458546",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "document_type": "Depenses",
+ "dynamic_filters_json": "[]",
+ "filters_json": "[[\"Depenses\",\"workflow_state\",\"=\",\"Approved\",false],[\"Depenses\",\"date\",\"Timespan\",\"this month\",false]]",
+ "group_by_based_on": "type_depense",
+ "group_by_type": "Sum",
+ "idx": 0,
+ "is_public": 0,
+ "is_standard": 1,
+ "last_synced_on": "2023-12-17 22:32:34.773311",
+ "modified": "2023-12-17 22:49:00.590577",
+ "modified_by": "Administrator",
+ "module": "Outils Gestion",
+ "name": "D\u00e9penses par type - Mois",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "parent_document_type": "",
+ "roles": [
+  {
+   "role": "Accounts Manager"
+  }
+ ],
+ "source": "",
+ "time_interval": "Yearly",
+ "timeseries": 0,
+ "timespan": "Last Year",
+ "type": "Donut",
+ "use_report_chart": 0,
+ "value_based_on": "",
+ "y_axis": []
+}

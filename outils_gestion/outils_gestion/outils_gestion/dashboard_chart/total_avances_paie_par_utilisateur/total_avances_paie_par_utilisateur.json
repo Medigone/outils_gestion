@@ -1,0 +1,39 @@
+{
+ "aggregate_function_based_on": "montant",
+ "based_on": "",
+ "chart_name": "Total Avances Paie par Utilisateur",
+ "chart_type": "Group By",
+ "color": "",
+ "creation": "2023-12-17 22:41:42.590269",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "document_type": "Avances Paie",
+ "dynamic_filters_json": "[]",
+ "filters_json": "[[\"Avances Paie\",\"workflow_state\",\"=\",\"Remis\",false]]",
+ "group_by_based_on": "utilisateur",
+ "group_by_type": "Sum",
+ "idx": 0,
+ "is_public": 0,
+ "is_standard": 1,
+ "last_synced_on": "2023-12-17 22:43:10.580040",
+ "modified": "2023-12-17 22:48:17.550668",
+ "modified_by": "Administrator",
+ "module": "Outils Gestion",
+ "name": "Total Avances Paie par Utilisateur",
+ "number_of_groups": 9,
+ "owner": "Administrator",
+ "parent_document_type": "",
+ "roles": [
+  {
+   "role": "Accounts Manager"
+  }
+ ],
+ "source": "",
+ "time_interval": "Yearly",
+ "timeseries": 0,
+ "timespan": "Last Year",
+ "type": "Donut",
+ "use_report_chart": 0,
+ "value_based_on": "",
+ "y_axis": []
+}
